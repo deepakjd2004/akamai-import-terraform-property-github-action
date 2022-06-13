@@ -9,7 +9,7 @@ propertyName=$1
 
 
 # check if propertyName exists
-if [ -z ${propertyName} ] ; then
+if [ -z "${propertyName}" ] ; then
   echo "Property name defined..this github action will proceed"
   mycommand1="akamai terraform --accountkey ${{secrets.AKAMAI_AS_ACCOUNTSWITCHKEY}} create-property ${propertyName}"
   echo "Running: $mycommand1"
