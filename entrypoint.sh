@@ -7,4 +7,4 @@ echo -e "${EDGERC}" > ~/.edgerc
 #  Set Variables
 propertyName=$1
 
-echo "akamai terraform --accountkey ${{secrets.AKAMAI_AS_ACCOUNTSWITCHKEY}} create-property ${propertyName}"
+echo "akamai terraform --accountkey ${secrets.AKAMAI_AS_ACCOUNTSWITCHKEY} create-property ${propertyName}"
