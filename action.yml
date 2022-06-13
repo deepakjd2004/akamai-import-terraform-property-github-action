@@ -1,0 +1,12 @@
+name: "Import Akamai Property in Terraform"
+description: "GitHub Action to import akamai property in terraform"
+author: DJ
+inputs:
+  propertyName:
+    description:  'Name of Property to be imported'
+    required: true
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.propertyName}}
