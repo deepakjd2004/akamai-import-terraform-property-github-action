@@ -13,11 +13,11 @@ on:
 jobs:
   my_job:
     runs-on: ubuntu-latest
-  steps:
-    - uses: actions/checkout@v2
-    - name: Import terraform property
-      uses: deepakjd2004/akamai-import-terraform-property-github-action
-      env:
-        EDGERC: ${{ secrets.EDGERC }}
-      with:
-        propertyName : 'dj-config-rapid-dj' # replace with the name of your domain
+    steps:
+      - uses: actions/checkout@v2
+      - name: Import terraform property
+        uses: deepakjd2004/akamai-import-terraform-property-github-action@v1
+        env:
+          EDGERC: ${{ secrets.EDGERC }}
+        with:
+          propertyName : 'dj-config-rapid-dj' # replace with the name of your domain
