@@ -11,7 +11,7 @@ mycommand="akamai terraform --accountkey $SWITCH_KEY create-property $propertyNa
 eval $mycommand > output
 cat output
 status=$(cat output | grep 'statusCode' | awk '{print $2}' | tr -d ,)
-if [ "$status" -eq "401" ] ; then
+if [ "$status" = "401" ] ; then
   echo "import command failed with: $output"
   exit 123
 else

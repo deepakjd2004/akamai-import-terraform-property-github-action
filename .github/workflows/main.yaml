@@ -16,7 +16,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Import terraform property
-        uses: deepakjd2004/akamai-import-terraform-property-github-action@v1.75
+        uses: deepakjd2004/akamai-import-terraform-property-github-action@v1.76
         env:
           EDGERC: ${{ secrets.EDGERC }}
           SWITCH_KEY: ${{ secrets.AKAMAI_AS_ACCOUNTSWITCHKEY }}
