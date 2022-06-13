@@ -2,7 +2,7 @@
 set -o pipefail
 
 # Create /root/.edgerc file from env variable
-echo -e "${EDGERC}" > '~/.edgerc'
+echo -e "${EDGERC}" > ~/.edgerc
 
 #  Set Variables
 propertyName=$1
